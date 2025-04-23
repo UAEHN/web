@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجاتنا | متجر الإلكترونيات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-bolt"></i>
+                    <span>متجر الإلكترونيات</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="active">المنتجات</a></li>
+                    <li><a href="about.html">عن المتجر</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-toggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-title">منتجاتنا</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">الرئيسية</a> / <span>المنتجات</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-group">
+                    <label>تصنيف:</label>
+                    <select class="filter-select">
+                        <option value="all">جميع المنتجات</option>
+                        <option value="laptops">أجهزة لابتوب</option>
+                        <option value="phones">هواتف ذكية</option>
+                        <option value="tablets">أجهزة لوحية</option>
+                        <option value="accessories">إكسسوارات</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>الماركة:</label>
+                    <select class="filter-select">
+                        <option value="all">جميع الماركات</option>
+                        <option value="apple">Apple</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="asus">ASUS</option>
+                        <option value="hp">HP</option>
+                        <option value="lenovo">Lenovo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>السعر:</label>
+                    <select class="filter-select">
+                        <option value="all">جميع الأسعار</option>
+                        <option value="0-1000">أقل من 1,000 د.إ</option>
+                        <option value="1000-3000">1,000 - 3,000 د.إ</option>
+                        <option value="3000-5000">3,000 - 5,000 د.إ</option>
+                        <option value="5000+">أكثر من 5,000 د.إ</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>ترتيب حسب:</label>
+                    <select class="filter-select">
+                        <option value="popular">الأكثر شعبية</option>
+                        <option value="newest">الأحدث</option>
+                        <option value="price-low">السعر: من الأقل للأعلى</option>
+                        <option value="price-high">السعر: من الأعلى للأقل</option>
+                    </select>
+                </div>
+                <button class="btn filter-btn">تطبيق الفلتر</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+        <div class="container">
+            <div class="products-wrapper">
+                <!-- Laptop Products -->
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="ASUS ROG Zephyrus G15">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn view-3d-btn" data-product="zephyrus"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">ASUS ROG Zephyrus G15</a>
+                        </h3>
+                        <div class="product-category">لابتوب</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">3,999 د.إ</span>
+                            <span class="old-price">4,999 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge sale-badge">خصم</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="ASUS ROG Strix SCAR 17">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn view-3d-btn" data-product="scar"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">ASUS ROG Strix SCAR 17</a>
+                        </h3>
+                        <div class="product-category">لابتوب</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">4,599 د.إ</span>
+                            <span class="old-price">5,299 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="MacBook Pro 16">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">MacBook Pro 16</a>
+                        </h3>
+                        <div class="product-category">لابتوب</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(56)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">7,999 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Phone Products -->
+                <div class="product-card">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="iPhone 13 Pro Max">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn view-3d-btn" data-product="iphone"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">iPhone 13 Pro Max</a>
+                        </h3>
+                        <div class="product-category">هاتف ذكي</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(78)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">4,299 د.إ</span>
+                            <span class="old-price">4,699 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="Samsung Galaxy S21 Ultra">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">Samsung Galaxy S21 Ultra</a>
+                        </h3>
+                        <div class="product-category">هاتف ذكي</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(64)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">3,899 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge sale-badge">خصم</div>
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="Google Pixel 6 Pro">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">Google Pixel 6 Pro</a>
+                        </h3>
+                        <div class="product-category">هاتف ذكي</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(37)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">2,999 د.إ</span>
+                            <span class="old-price">3,499 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- More Products -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="iPad Pro 12.9">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">iPad Pro 12.9</a>
+                        </h3>
+                        <div class="product-category">جهاز لوحي</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(49)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">3,699 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://via.placeholder.com/300x200" alt="Sony WH-1000XM4">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            <button class="action-btn"><i class="fas fa-cube"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="product-details.html">Sony WH-1000XM4</a>
+                        </h3>
+                        <div class="product-category">سماعات</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(92)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">1,199 د.إ</span>
+                            <span class="old-price">1,399 د.إ</span>
+                        </div>
+                        <button class="btn primary-btn add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>أضف إلى السلة</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-link">10</a>
+                <a href="#" class="page-link next-page">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>اشترك في نشرتنا الإخبارية</h2>
+                    <p>احصل على آخر العروض والتحديثات مباشرة إلى بريدك الإلكتروني</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    <button type="submit" class="btn primary-btn">اشترك الآن</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>متجر الإلكترونيات</span>
+                    </div>
+                    <p class="footer-desc">متجرك الأول للأجهزة الإلكترونية في دبي، الإمارات العربية المتحدة. نوفر أحدث المنتجات بأفضل الأسعار.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="about.html">عن المتجر</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">فئات المنتجات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">أجهزة لابتوب</a></li>
+                        <li><a href="#">هواتف ذكية</a></li>
+                        <li><a href="#">أجهزة لوحية</a></li>
+                        <li><a href="#">سماعات</a></li>
+                        <li><a href="#">إكسسوارات</a></li>
+                        <li><a href="#">شاشات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">معلومات التواصل</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>شارع الشيخ زايد، دبي، الإمارات العربية المتحدة</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+971 4 123 4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@electronics-store.ae</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>السبت - الخميس: 10:00 ص - 10:00 م</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 متجر الإلكترونيات. جميع الحقوق محفوظة.
+                </div>
+                <div class="payment-methods">
+                    <span>طرق الدفع المقبولة:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 3D Model Modal -->
+    <div id="model3dModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="model-container">
+                <div class="model-iframe" id="modelIframe">
+                    <!-- 3D Model iframe will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
